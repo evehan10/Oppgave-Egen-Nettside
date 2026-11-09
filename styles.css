@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+}
+
+main {
+    padding: 0 50px;
 }
 
 header {
@@ -12,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 40px;
+    padding: 25px 60px;
     background-color: #8d8d8d;
 }
 
@@ -31,12 +39,46 @@ header {
 }
 
 .nav-links a:hover {
-    color: #1b1b1b;
+    color: #fcfcfc;
 }
 
 .home {
     display: flex;
     color:  #1b1b1b;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home:hover {
+    color: #fcfcfc;
+}
+
+h1 {
+    display: flex;
+    font-size: 70px;
+    margin: 0;
+    padding: 55px 15px;
+}
+
+.button {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #8d8d8d;
+    color: #1b1b1b;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background-color: #c1bfbf;
+    color: #fcfcfc;
+}
+
+.intro {
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-left: 15px;
 }
