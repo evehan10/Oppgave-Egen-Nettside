@@ -22,6 +22,7 @@ header {
     align-items: center;
     padding: 25px 60px;
     background-color: #8d8d8d;
+    border-bottom: 3px solid #6e6e6e;
 }
 
 .nav-links {
@@ -69,16 +70,48 @@ h1 {
     color: #1b1b1b;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 2px solid #6e6e6e;
 }
 
 .button:hover {
     background-color: #c1bfbf;
     color: #fcfcfc;
+    border: 2px solid #f8f7f7;
 }
 
 .intro {
     font-size: 20px;
     margin-bottom: 35px;
     margin-left: 15px;
+}
+
+h2 {
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 3px;
+    margin-left: 15px;
+}
+
+#om-meg {
+    text-decoration: none;
+    margin-top: 60px;
+    display:flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: #8d8d8d;
+    border: 3px solid #6e6e6e;
+}
+
+#kontakt {
+    text-decoration: none;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display:flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: #8d8d8d;
+    border: 3px solid #6e6e6e;
 }
