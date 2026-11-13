@@ -115,3 +115,95 @@ h2 {
     background-color: #8d8d8d;
     border: 3px solid #6e6e6e;
 }
+
+.prosjektliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+
+.prosjektkort {
+    display: flex;
+    flex-direction: column;
+    background-color: #8d8d8d;
+    border: 3px solid #6e6e6e;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.prosjektkort img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.prosjektkort h3 {
+    font-size: 20px;
+    margin: 15px 15px 5px;
+}
+
+.prosjektkort p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 15px 20px;
+}
+
+.prosjektkort:hover {
+    transform: translateY(-7px);
+}
+
+#favorittspilloverskrift {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.favorittspill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+
+.spillliste {
+    display: flex;
+    flex-direction: column;
+    background-color: #8d8d8d;
+    border: 3px solid #6e6e6e;
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+.spillliste img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.spillliste p {
+    font-size: 30px;
+    margin: 5px 15px 20px;
+}
+
+.spillliste:hover {
+    transform: translateY(-7px);
+}
+
+@media (max-width: 900px) {
+    .prosjektliste {
+        grid-template-columns: 1fr 1fr;
+    }
+    .favorittspill {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .prosjektliste {
+        grid-template-columns: 1fr;
+    }
+    .favorittspill {
+        grid-template-columns: 1fr;
+    }
+}
