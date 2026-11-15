@@ -257,6 +257,39 @@ h2 {
     outline-offset: 3px;
 }
 
+.foto-galleri {
+    overflow: hidden;
+    padding: 30px 0;
+    border-top: 1px solid #252d38;
+    border-bottom: 1px solid #252d38;
+}
+
+.foto-visning {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    animation: move-photos 90s linear infinite;
+}
+
+.foto-visning img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 2px solid #252d38;
+    flex-shrink: 0;
+}
+
+@keyframes move-photos {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width: 900px) {
     .prosjektliste {
         grid-template-columns: 1fr 1fr;
