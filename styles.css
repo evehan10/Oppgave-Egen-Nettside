@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    background-color: #d6d5d5;
+    background-color: #d5d6d6;
 }
 
 body {
@@ -21,6 +21,50 @@ footer {
     font-size: 0.7rem;
     text-align: center;
     background-color: #c5c5c5;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 -50px;
+    padding: 40px 65px;
+
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    display: flex;
+    font-size: 85px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 0px 15px;
+}
+
+h1 {
+    display: flex;
+    font-size: 85px;
+    margin: 0;
+    margin-top: 130px;
+    margin-bottom: 40px;
+    padding: 0px 15px;
 }
 
 .navbar {
@@ -72,15 +116,6 @@ footer {
     outline: 3px solid #fcfcfc;
     outline-offset: 12px;
     border-radius: 1px;
-}
-
-h1 {
-    display: flex;
-    font-size: 85px;
-    margin: 0;
-    margin-top: 110px;
-    margin-bottom: 40px;
-    padding: 0px 15px;
 }
 
 .button {
@@ -213,7 +248,8 @@ h2 {
 
 .spillliste p {
     font-size: 30px;
-    margin: 20px 15px 20px;
+    margin: 20px 15px 25px;
+    text-align: center;
 }
 
 .spillliste:hover {
