@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    background-color: #d5d6d6;
+    background-color: #869385;
 }
 
 body {
@@ -20,7 +20,8 @@ header {
 footer {
     font-size: 0.7rem;
     text-align: center;
-    background-color: #c5c5c5;
+    background-color: #303c36;
+    color:#7b987d
 }
 
 .hero {
@@ -58,22 +59,13 @@ footer {
     padding: 0px 15px;
 }
 
-h1 {
-    display: flex;
-    font-size: 85px;
-    margin: 0;
-    margin-top: 130px;
-    margin-bottom: 40px;
-    padding: 0px 15px;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 60px;
-    background-color: #8d8d8d;
-    border-bottom: 3px solid #6e6e6e;
+    background-color: #0f100f;
+    border-bottom: 3px solid #080808;
 }
 
 .nav-links {
@@ -85,13 +77,13 @@ h1 {
 }
 
 .nav-links a {
-    color: #1b1b1b;
+    color: #f7f5f5;
     text-decoration: none;
     font-size: 16px;
 }
 
 .nav-links a:hover {
-    color: #fcfcfc;
+    color: #aaaaaa;
 }
 
 .nav-links a:focus-visible {
@@ -102,14 +94,14 @@ h1 {
 
 .home {
     display: flex;
-    color:  #1b1b1b;
+    color:  #ffffff;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
 }
 
 .home:hover {
-    color: #fcfcfc;
+    color: #aaaaaa;
 }
 
 .home:focus-visible {
@@ -161,8 +153,8 @@ h2 {
     flex-direction: column;
     padding: 5px 25px;
     border-radius: 20px;
-    background-color: #8d8d8d;
-    border: 3px solid #6e6e6e;
+    background-color: #4a5950;
+    border: 3px solid #303a35;
 }
 
 #kontakt {
@@ -173,8 +165,8 @@ h2 {
     flex-direction: column;
     padding: 5px 25px;
     border-radius: 20px;
-    background-color: #8d8d8d;
-    border: 3px solid #6e6e6e;
+    background-color: #4a5950;
+    border: 3px solid #303a35;
 }
 
 .prosjektliste {
@@ -187,8 +179,8 @@ h2 {
 .prosjektkort {
     display: flex;
     flex-direction: column;
-    background-color: #8d8d8d;
-    border: 3px solid #6e6e6e;
+    background-color: #4a5950;
+    border: 3px solid #303a35;
     border-radius: 15px;
     transition: transform 0.2s ease;
 }
@@ -197,7 +189,7 @@ h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 3px solid #6e6e6e;
+    border-bottom: 3px solid #303a35;
     border-radius:12px 12px 0 0;
 }
 
@@ -232,8 +224,8 @@ h2 {
 .spillliste {
     display: flex;
     flex-direction: column;
-    background-color: #8d8d8d;
-    border: 3px solid #6e6e6e;
+    background-color: #4a5950;
+    border: 3px solid #303a35;
     border-radius: 15px;
     transition: transform 0.2s ease;
 }
@@ -242,7 +234,7 @@ h2 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 3px solid #6e6e6e;
+    border-bottom: 3px solid #303a35;
     border-radius:12px 12px 0 0;
 }
 
@@ -295,9 +287,11 @@ h2 {
 
 .foto-galleri {
     overflow: hidden;
-    padding: 30px 0;
+    padding: 10px;
+    margin: -50px;
     border-top: 1px solid #252d38;
     border-bottom: 1px solid #252d38;
+    background-color: #4a5950;
 }
 
 .foto-visning {
@@ -333,6 +327,9 @@ h2 {
     .favorittspill {
         grid-template-columns: 1fr 1fr;
     }
+    .hero h1 {
+        font-size:75px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -345,5 +342,8 @@ h2 {
     .kontakt-button {
         width: 38px;
         height: 38px;
+    }
+    .hero h1 {
+        font-size:60px;
     }
 }
